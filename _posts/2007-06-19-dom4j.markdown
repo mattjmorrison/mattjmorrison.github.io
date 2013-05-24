@@ -1,0 +1,97 @@
+---
+layout: post
+title:  Dom4j
+date:   2007-06-19
+---
+
+In my personal opinion dom4j is everything an XML parser should be. I'm not
+going to go into tons of detail, as most bloggers often do, but I will give a
+brief overview of my situation and experiences using dom4j.
+
+So there I was, a humble programmer trying to figure out how I was ever going to
+parse a (ruffly) 1 gig XML file into (ruffly) 20,000 smaller XML files without
+using up all of the servers resources and without waiting for hours and hours for
+this to complete. If this had been a 1 time chore, perhaps I could have bitten
+the bullet and used the perl module `XML::Twig` which comes with an `xml_split`
+utility script. I had tried this, and it worked nicely, it didn't hog resources,
+it didn't overload memory, but it ended up taking about 2 hours to run. That
+would have been fine, however, this 1 gig XML feed is something that needs to be
+parsed at least once a month and 2 hours is just unacceptable.
+
+After ruling out perl, and trying SAX and StAX and giving up, I came across dom4j
+(with the help of a co-worker). After 5 minutes of coding and 8 minutes of run
+time the 1 gig XML file had been parsed into (nearly) 20,000 smaller xml files.
+From the outside looking in at dom4j, it seems to work like both a SAX and DOM
+parser. It is initially even driven, like SAX, but you can capture an entire node
+(and all children) on the closing tag event. Here is an example:
+
+I've got a very large XML file that I want to split into many smaller XML files
+on a specific node. The original XML looks like this:
+
+{% highlight xml %}
+<root>
+    <header>...</header>
+    <body>
+        <item id=1>...</item>
+        <item id=2>...</item>
+        <item id=3>...</item>
+    </body>
+</root>
+{% endhighlight %}
+
+Now, what I'm trying to do in my example is create a bunch of new xml files using
+as the root of the XML tree and all of 's children as the rest of the XML
+document. Granted that this is a very small example and would be fairly easy to
+accomplish with most XML parsers. Assume that there were 100,000 Item's in the
+file and each had a lot of children nodes and data. Now, we may have an issue
+with CPU and memory consumption with many XML parsers.
+
+Having said that, here is the java that makes it all happen.
+
+{% highlight java %}
+
+SAXReader reader = new SAXReader(); reader.addHandler("/root/body/item",
+    new ElementHandler(){
+        public void onStart(ElementPath path){ //do nothing }
+        public void onEnd(ElementPath path){
+            Element item = path.getCurrent();
+            String itemId = new String(item.attributeValue("id"));
+            FileOutputStream fout;
+            fout = new FileOutputStream("C:\\" + itemId + ".xml");
+            new PrintStream(fout).print(item.asXML());
+            fout.close();
+            item.detach();
+        }
+    }
+);
+Document document = reader.read("C:\\orignalFile.xml");
+{% endhighlight %}
+
+This is really pretty simple code to write for as powerful as it is. Let me walk
+you through the code a little bit. First of all, we're creating a new SAXReader
+object which we're going to use to parse the original XML document. Then, we're
+calling the addHandler method to register an event with the SAXReader. The first
+argument we're passing into the Handler is an xPath expression to the node list
+that we want to grab out of the XML file. The second argument is an
+ElementHandler which in this case we only care when we hit the end of each item
+element (because at that point we've read the entire contents of that element.
+So, the onEnd method will be triggered once the SAXReader encounters a closing
+`</item>` tag. At this point we want to parse the sub-tree (which we get using
+the `getCurrent()` method and will be from `<item>` to `</item>`) and get the value of
+the id attribute. This is what we're going to use to name the newly created xml
+files because in this case it is something unique to each item. After creating a
+new output stream and naming the file the item's id with an added ".xml" we print
+the `asXML()` of our current XML subtree to the file and close it. At this point
+we've created an XML file for the first `<item>` node in the original file. Now we
+want to free-up our memory allocation where that XML sub-tree was loaded so we
+call the `detatch()` method. This is going to dump all of that XML that we've been
+accumulating out of memory. So once we hit the next `</item>` we will not have the
+first 2 `<item>`, but only the 2nd.
+
+The above process is repeated each time the SAXReader encounters another `</item>`
+tag. Once all of those events have been triggered we are done. The last line of
+code is what will actually kick off the SAXReader which will in turn trigger
+events.
+
+I hope this was helpful. I know I found dom4j extremely useful, I hope you can
+find good use for it as well.
