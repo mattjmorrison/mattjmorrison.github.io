@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Gzip CSS" 
+date:   2007-12-01
+---
+
+I've recently read High Performing Websites by Steve Souders and since I finished
+the book I've been using some of the suggested techniques. One of the items that
+I've had trouble with is gzipping css style sheets. I began trying to use the
+technique outlined here but for whatever reason I could not get it to work. So I
+modified that method into one that would work (for me). Personally, I feel that
+it is quite a bit simpler. Here is what I did. I used the same php code with one
+modification.
+
+{% highlight php %}
+<?
+    ob_start("ob_gzhandler");
+    header("Content-type: text/css; charset: UTF-8");
+    header("Cache-Control: must-revalidate");
+    $offset = 60 * 60;
+    $ExpStr = "Expires: " . gmdate("D, d M Y H:i:s", time() + $offset) . " GMT";
+    header($ExpStr);
+    include($_REQUEST['stylesheet'] . ".css");
+?>
+{% endhighlight %}
+
+The modification that I made was the include line at the end. Instead of using
+the `auto_prepend_file` in my `.htaccess` file I used `mod_rewrite`. Here is what
+I put in `.htaccess`.
+
+`RewriteRule ^([^/\.]+)/([^/\.]+)\.css$ /css/gzip-css.php?stylesheet=$2`
+
+So what happens is when the browser requests a .css file it will rewrite the url
+to the php script (above...saved as gzip-css.php) and pass the name of the
+stylesheet as a query string parameter.
+
+In short, I ended up adding a single line of code to the php script and removing
+3 lines of unfamiliar commands from `.htaccess` and using a `RewriteRule` (which
+I was already using). It is still unintrusive to your html that is including css
+files and also unintrusive to your css code. Easy to implement and simple to
+maintain.
+
