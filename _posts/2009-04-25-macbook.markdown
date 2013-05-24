@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Macbook"
+date:   2009-04-25
+---
+I recently purchased a Mac Book...which is the first non-windows computer that
+I've ever purchased. I can honestly say that I couldn't be happier. I've never
+before had the pleasure of using a more user-friendly OS. I only wish that I
+would have been using a mac for years. As a developer, I consider myself a super
+user...and the more work the computer will do for me, the more productive I can
+be at my job. Using Windows, I consider myself super productive...I can only
+imagine how productive I can be on my new Mac...if easy things (like installing
+applications) is so much easier on a Mac than on Windows, I can only imagine how
+much easier the really hard stuff is going to be.
+
+I'm still just getting into it, but I'll be sure to post updates about my Mac
+journey.
+
+I'm very excited to do some hard core development and see how it goes.
