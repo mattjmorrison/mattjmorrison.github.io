@@ -1,0 +1,53 @@
+---
+layout: post
+title:  Use Tools
+date:   2012-09-21
+---
+
+I'd like to retell an old story that has been around for a very long time. I honestly do not remember where I
+first heard it, I wish I did so that I could give some credit where credit is due.
+
+The story begins in a village cut off from the rest of the world. There is a fresh water stream two miles from
+the village. Every day the villagers make multiple trips to the stream to get fresh water. The villagers have
+used the same buckets for as long as anyone can remember. The buckets are carved from stone therefore very
+heavy, and even heavier once they are full of water.
+
+One day a band of travelers set up camp near the stream and some of the villagers saw them. They watched in awe
+as the traveler children played in the stream, splashing each other with buckets of water. The villagers were
+taken aback. They had never seen or even considered the possibility that something as difficult as carrying
+water in buckets could be done by children so easily for entertainment.
+
+Initially the villagers were angry. It was insulting to them that one of their most important and most
+difficult jobs was literally child's play to these travelers. One brave villager approached the travelers and
+explained their situation. The travelers explained that their buckets were made of wood, and therefore very
+light and easy to carry. As a friendly gesture, the travelers gave the brave villager a wooden bucket as a gift.
+
+The brave villager returned home with the bucket and showed everyone how a wooden bucket would make everyone's
+lives better. All of the villagers were very impressed. They disassembled the wooden bucket to see how it was
+made and began building their own buckets. The next day, they took their new wooden buckets to the stream and
+realized that their homemade wooden buckets were leaky. They went back to using the heavy stone buckets when
+they saw how the wooden buckets failed.
+
+After re-examining the pieces of the wooden bucket that they had disassembled, they realized that their wooden
+buckets didn't have anything to plug the gaps in the wood like the one from the travelers did. The villagers
+took their leaky wooden buckets and filled in all of the gaps with thick mud. The next day they filled their
+new, leak-proof buckets with water only to realize that the mud that was used to full the gaps aslo made the
+water dirty. So, the returned to using the stone buckets.
+
+The brave villager returned to the travelers and explained why the wooden buckets would not work. The travelers
+offered to give the villagers all the wooden buckets they would need if they would promise to use them instead
+of disassembling them and trying to create their own. The brave villager agreed and returned home with the new
+wooden buckets.
+
+From that day forward carrying water from the stream was a much more trivial chore than the colossal task that
+it had been in the past. Once the villagers had swallowed their pride and just used the free buckets that were
+built by professionals their lives were easier and they had more time and resources to spend on things that
+matter to them and not waste time on making buckets.
+
+This story really resonates with me. It's a perfect analogy to so many things in the software industry. It
+shows how dangerous silos can be, the real cost of technical debt and not keeping (at least relatively) current,
+why NIH and the 'roll-your-own' mindset is dangerous, and the value of taking advantage of free open source
+tools. Of course, there are always exceptions. Sometimes a bucket is not the right tool for the job, sometimes
+the right tool does not exist and must be invented, and other times buckets need to be slightly modified to be
+able to do the job at hand. So, to wrap it up I just want to say +1 to open source and +1 to forking.
+

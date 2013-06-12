@@ -49,6 +49,7 @@ class FirstGradeMathTests(unittest.TestCase):
 And I want to extend this class for second graders to include multiplication and
 division. This is where I run into a dilemma. What is my first test for the
 second grade math implementation? I could start a number of different ways:
+
 * I could re-test drive addition and subtraction and refactor by adding
 FirstGradeMath as a parent class
 * I could copy the tests from FirstGradeMathTests and paste them into
@@ -118,13 +119,15 @@ dependent upon that object's state. Maybe this is alright if the only thing that
 we will ever need to add, subtract, multiply or divide is 2 and 2, but that is
 not the case here.
 
-Inheriting unit tests requires an abstraction, an instance of a *GradeMath,
+Inheriting unit tests requires an abstraction, an instance of a \*GradeMath,
 however is not the correct abstraction. If we remove the "sut" variable from the
 setUp methods and just instantiate FirstGradeMath in the FirstGradeMathTests and
 SecondGradeMath in the SecondGradeMathTests then inheriting the FirstGradeMath
 tests are not going to really test anything about SecondGradeMath. Our
 abstraction level needs to be higher than an instance, so let's move up one level
-to the class. Here are the revised tests:
+to the class.
+
+Here are the revised tests.
 
 {% highlight python %}
 import first_grade
