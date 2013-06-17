@@ -4,50 +4,58 @@ navigation:
   url: /
 - text: Archive
   url: /archive
+
+bio:
+- text: I'm Matthew J. Morrison.
+- text: A Passionate, professional software developer & hobbyist; Language nerd & regular user of Unix, Python, Ruby & JavaScript.
+
+social:
+- text: twitter.com/mattjmorrison
+  url: http://twitter.com/mattjmorrison
+- text: github.com/mattjmorrison
+  url: http://github.com/mattjmorrison
 ---
 
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/assets/css/syntax.css">
-        <link rel="stylesheet" href="/assets/css/main.css">
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/assets/css/syntax.css" />
+        <style type="text/css">
+        body { padding-top: 50px; }
+        .navbar .brand { margin-left:10px; }
+        </style>
     </head>
     <body>
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              {% for link in page.navigation %}
-                  <a class="extra" href="{{ link.url }}">{{ link.text }}</a>
-              {% endfor %}
+        <div class="container container-fluid">
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <a class="brand" href="/">{{ site.name }}</a>
+                    <ul class="nav">
+                    {% for link in page.navigation %}
+                        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </div>
             </div>
 
-            <p>I'm Matthew J. Morrison. A Passionate, professional software developer & hobbyist. Language nerd & regular user of Unix, Python, Ruby & JavaScript.</p>
-            <img class="photo" src="https://secure.gravatar.com/avatar/fef0c23e28423a81e227ac336953e2d7?s=200" />
-
-            <div id="content">
-                {{ content }}
+            <div class="row-fluid">
+                <div class="span2" style="position: fixed;">
+                    <img class="photo" src="https://secure.gravatar.com/avatar/fef0c23e28423a81e227ac336953e2d7?s=200" />
+                    {% for part in page.bio %}
+                    <p>{{ part.text }}</p>
+                    {% endfor %}
+                    {% for link in page.social %}
+                        <p><a href="{{ link.url }}">{{ link.text }}</a></p>
+                    {% endfor %}
+                </div>
+                <div class="span10 offset2">
+                    {{ content }}
+                </div>
             </div>
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Matthew J. Morrison<br />
-                  Software Developer<br />
-                  mattjmorrison@mattjmorrison.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/mattjmorrison/">github.com/mattjmorrison</a><br />
-                  <a href="http://twitter.com/mattjmorrison/">twitter.com/mattjmorrison</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
     </body>
 </html>
