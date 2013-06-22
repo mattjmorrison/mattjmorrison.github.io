@@ -10,5 +10,3 @@ title: mattjmorrison.com
 <div id="post">
 {{ content }}
 </div>
-
-

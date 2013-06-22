@@ -1,27 +1,30 @@
 ---
-layout: post
+layout: agile-crusade
 title:  "My Crusade for Agility: Part 1"
 date:   2010-09-05
+category: agile-crusade
+part: 1
 ---
 
-Over the past few years I have been slowly introduced to agile development
-practices. Between a combination of conferences (like Iowa Code Camp, No
-Fluff Just Stuff, and PyCon), local user groups (like Central Iowa Java
-Users Group, The Iowa Ruby Brigade, The Iowa Python Users Group, and Agile
-Iowa), books (like The Pragmatic Programmer: From Journeyman to Master,
-Practices of an Agile Developer and Test Driven Development: By Example),
-and the extremely generous nature of agile shops in the area (Iowa Student
-Loan, GeoLearning, and CDS Global) (thanks Tim, Brandon and Trent) I feel
-like I have a decent understanding of what some good agile development
-practices are. Now that I have a taste for what it means to be an agile
-developer working on an agile team, I crave it, I need it, but I don't
-currently have it. This, and what I hope to be a series of follow up posts,
+Over the past few years I have been gradually introduced to agile software
+development practices. Between a combination of conferences (like [Iowa Code
+Camp][iowacodecamp], [No Fluff Just Stuff][nfjs], and [PyCon][pycon]), local
+user groups (like [Central Iowa Java Users Group][cijug], [The Iowa Ruby Brigade][iowaruby],
+[The Iowa Python Users Group][pyowa], and [Agile Iowa][agileiowa] ), books
+(like [The Pragmatic Programmer: From Journeyman to Master][pragprog],
+[Practices of an Agile Developer][agileprac] and [Test Driven Development: By Example][tdd]),
+and the extremely generous nature of agile shops in the area ([Iowa Student
+Loan][isl], [GeoLearning][geo], and [CDS Global][cds]) (thanks [Tim][timander],
+[Brandon][bcarlso] and [Trent][tohann]) I feel like I have a decent understanding
+of what some good agile development practices are. Now that I have a taste for what
+it means to be an agile developer working on an agile team, I crave it, I need it,
+but I don't currently have it. This, and what I hope to be a series of follow up posts,
 is my crusade from the least agile imaginable developer, to whatever awkward
 agile puberty that I am currently in, to where I hope to one day be.
 
 
-I'll start at the very beginning of my career as developer. I went to Indian
-Hills Community College right out of high school and got an Associates of
+I'll start at the very beginning of my career as developer. I went to [Indian
+Hills Community College][ihcc] right out of high school and got an Associates of
 Applied Science in the field of Computer Programming/Analysis. Indian Hills
 was great, I loved it there, it was hard core "code code code" the entire time.
 I learned a ton very quickly and got a job as a COBOL developer months before
@@ -37,8 +40,8 @@ inadequacies of my environment. After a few short years as a COBOL developer I
 saw an opportunity to move into the Java world, professionally, and took it.
 
 
-Moving from the COBOL to Java was a breath of fresh air. I had all of these
-nice fancy GUI tools and I was working on code that was written within the
+Moving from COBOL to Java was a breath of fresh air. I had all of these
+fancy GUI tools and I was working on code that was written within the
 last decade. I was so smitten with working on more current technology (and
 source control!) that I was blind to the fact that although the technology
 changed, I was really just doing the same thing. Patching hacks of hacks with
@@ -47,8 +50,9 @@ the buck to BAs and QAs to do all of the "serious testing". Huge requirements
 documents that had been handed off from one person to the next, re-interpreted
 and re-translated again and again obfuscating what the business really needed
 the software to do and why. Battling constant scope creep, missed deadlines,
-cancelled and delayed projects and fixing and re-fixing the same bugs over and
-over I began to realize that something here was broken.
+excessive processes and paperwork, canceled and delayed projects and fixing
+and re-fixing the same bugs over and over I began to realize that something
+here was broken.
 
 
 Once I realized this, I also realized that I could be working on the latest and
@@ -61,3 +65,21 @@ different technology isn't what I was really seeking.
 
 I will let that conclude Part 1 of My Crusade for Agility. I've got loads more
 that I want to share, so tune in next time for Part 2.
+
+[iowacodecamp]: http://iowacodecamp.com/
+[nfjs]: http://www.nofluffjuststuff.com/
+[pycon]: https://us.pycon.org/
+[cijug]: http://cijug.net/
+[iowaruby]: http://iowaruby.org/
+[pyowa]: http://pyowa.org/
+[agileiowa]: http://agileiowa.org/
+[pragprog]: http://pragprog.com/the-pragmatic-programmer
+[agileprac]: http://pragprog.com/book/pad/practices-of-an-agile-developer
+[tdd]: http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530
+[isl]: http://www.studentloan.org/
+[geo]: http://www.sumtotalsystems.com/
+[cds]: http://www.cds-global.com/
+[timander]: https://twitter.com/timander
+[tohann]: https://twitter.com/tohann
+[bcarlso]: https://twitter.com/bcarlso
+[ihcc]: http://www.indianhills.edu/

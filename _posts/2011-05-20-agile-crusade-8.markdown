@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: agile-crusade
 title:  "My Crusade for Agility: Part 8"
 date:   2011-05-20
+category: agile-crusade
+part: 8
 ---
 
 It's been a few months since I've posted an update regarding the progress of My

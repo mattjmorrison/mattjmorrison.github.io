@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: agile-crusade
 title:  "My Crusade for Agility: Part 9"
 date:   2011-10-17
+category: agile-crusade
+part: 9
 ---
 
 Welcome to the 9th installment of My Crusade for Agility.  Just before starting

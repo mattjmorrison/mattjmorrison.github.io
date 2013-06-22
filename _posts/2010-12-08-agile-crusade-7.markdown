@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: agile-crusade
 title:  "My Crusade for Agility: Part 7"
 date:   2010-12-08
+category: agile-crusade
+part: 7
 ---
 
 It has been over a year since I started working at my current employer.  In my

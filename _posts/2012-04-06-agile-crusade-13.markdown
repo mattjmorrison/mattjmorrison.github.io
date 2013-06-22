@@ -1,7 +1,9 @@
 ---
-layout: post
-title:  "My Crusade for Agility: Part 12"
+layout: agile-crusade
+title:  "My Crusade for Agility: Part 13"
 date:   2012-04-06
+category: agile-crusade
+part: 13
 ---
 
 

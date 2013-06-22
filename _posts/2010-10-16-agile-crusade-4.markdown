@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: agile-crusade
 title:  "My Crusade for Agility: Part 4"
 date:   2010-10-16
+category: agile-crusade
+part: 4
 ---
 
 This is my 4th installment of My Crusade for Agility. In previous installments

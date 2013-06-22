@@ -4,6 +4,9 @@ navigation:
   url: /
 - text: Archive
   url: /archive
+- text: Agile Crusade
+  url: /agile-crusade
+  category: agile-crusade
 
 bio:
 - text: I'm Matthew J. Morrison.
@@ -36,7 +39,7 @@ social:
                     <a class="brand" href="/">{{ site.name }}</a>
                     <ul class="nav">
                     {% for link in page.navigation %}
-                        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+                    <li {% if page.category and page.category == link.category %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
                     {% endfor %}
                     </ul>
                 </div>
@@ -54,7 +57,7 @@ social:
                         {% endfor %}
                     </div>
                 </div>
-                <div class="span9">
+                <div class="span9 offset1">
                     {{ content }}
                 </div>
             </div>

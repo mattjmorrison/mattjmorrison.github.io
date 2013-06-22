@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: agile-crusade
 title:  "My Crusade for Agility: Part 10"
 date:   2011-10-24
+category: agile-crusade
+part: 10
 ---
 
 This is the 10th installment of My Crusade for Agility. I began writing this blog
