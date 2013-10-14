@@ -67,7 +67,7 @@ completing that you should see a page that looks like this:
 
 ![Chef Server UI](/assets/images/chef-server-loggedin.png)
 
-Before we move onto the next step, lets crete a new client that we will use in some future steps. Click on the
+Before we move onto the next step, lets create a new client that we will use in some future steps. Click on the
 clients tab, then click create. Choose a user name (I am going to call this client `test`) and go ahead and
 check the `admin` checkbox. After submitting that form, you will be given a public and private key. Save those,
 you will need them again soon.
@@ -183,7 +183,7 @@ our last machine.
 
 * The first step is getting chef-client running on it. Chef client will check in with the chef server from
 time to time to see if there are any updates or new cookbooks that need to be installed. To start chef-client
-run the following command from the workstation machine (just substitue the IP address, username and password):
+run the following command from the workstation machine (just substitute the IP address, username and password):
 {% highlight bash %}
 knife bootstrap IP_OF_PROD_SERVER --ssh-user USER --ssh-password SSH_PASSWORD --run-list 'recipe[chef-client]' -j '{"chef_client": {"interval": 5}}'
 {% endhighlight %}
