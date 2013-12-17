@@ -38,7 +38,7 @@ low expectations).
 
 After having seen how these agile shops operate I was extremely excited to try to
 implement some of the things that they were doing. I wanted a big public display
-our our CI environment, big white boards that showed what everyone was working
+of our CI environment, big white boards that showed what everyone was working
 on, scheduled releases with a predefined set of new features and enhancements
 that would be implemented and I wanted to do TDD and pair programming. The
 unfortunate thing was that my team was currently halved, half on one end of the
