@@ -51,7 +51,7 @@ allow us to deliver an amount of work to our partners so we can receive feedback
 At the end of the first week we have completed the development of 31 of the total
 39 points included in our sprint. I'm very happy with that and actually extremely
 surprised. Not because I didn't think we could do it, but because I was out of
-the office one day, I left early another day, we got new computers (so we waisted
+the office one day, I left early another day, we got new computers (so we wasted
 at least a day setting up the new hardware), we did a bit of house cleaning
 because we have a new team member joining us next week and overall I feel like we
 have not done a very good job of sticking to the tasks on the story cards.
@@ -75,9 +75,3 @@ I will write another follow up once the sprint is complete to fill every one in
 with how we ended up.  I also have a few other fun and interesting things to
 share, so tune in next time. Hope you've enjoyed my first 10 installments of My
 Crusade for Agility.
-
-
-
-
-
-
