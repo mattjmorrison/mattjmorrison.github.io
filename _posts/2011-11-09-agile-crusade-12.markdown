@@ -25,19 +25,19 @@ We're doing a lot of good things that include but are not limited to:
 
 
 Fairly recently we added some monitors in our common development area that
-displays all of our bilds on one monitor and scrolls through each build
-individually (to show more details for each build) on the other (see above).
+displays all of our builds on one monitor and scrolls through each build
+individually (to show more details for each build) on the other monitor.
 We also recently got some new (awesome) laptops for our development machines and
-added a third pairing station in our development area (see left and below). 
+added a third pairing station in our development area. 
 
 We also did a bit of redecorating. We raised some desks to standing height
 (like the rest of our desks) for both our build display monitors and a dedicated
-IE testing machine (see below). We also added some shelves four our growing
+IE testing machine (see below). We also added some shelves for our growing
 library of technical books. 
 
 Our team has grown quite a bit recently also. When I first started there was
-myself and 2 other developers working on our project, now we have 3 Full time
-web developers, 1 part time web developer, 1 half web developer / half manager,
+myself and 2 other developers working on our project, now we have 3 full time
+web developers, 1 part time web developer, 1 half web developer / half manager, and
 3 developers who have been primarily supporting the legacy system who are
 recently getting more involved with web development.
 
@@ -58,7 +58,7 @@ complicates the process of providing the same business value in a new platform.
 We need to simultaneously iteratively develop a replacement product and train the
 existing developers in the new technology and the new developers on the legacy
 system. The technical training is more than just learning a new language or
-platform, it's learning OOP, Python, JavaScript, CSS, HTML, HTTP, SQL (and
+platform, it's also learning OOP, Python, JavaScript, CSS, HTML, HTTP, SQL (and
 relational databases), etc, plus all of the various open source libraries that
 we use.
 
