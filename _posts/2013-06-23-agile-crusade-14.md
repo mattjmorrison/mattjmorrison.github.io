@@ -38,7 +38,7 @@ with.
 There are a lot of benefits that I have seen using a dual machine pairing
 station over a single machine pairing station. Our previous pairing stations
 consisted of a single machine with two mice and two keyboards. This worked
-very well, however there were some draw backs. When there is only one machine
+very well, however there were some drawbacks. When there is only one machine
 it can only do one thing at a time. Only one person can be using the mouse or
 typing at a time. This can be an advantage because it forces both individuals
 to be fully engaged, however it also can prevent some very beneficial parallel
