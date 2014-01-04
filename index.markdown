@@ -10,3 +10,7 @@ title: mattjmorrison.com
 <div id="post">
 {{ content }}
 </div>
+
+<script type="text/javascript">
+var disqus_identifier = '{{ post.title }}';
+</script>
