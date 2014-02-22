@@ -83,7 +83,7 @@ obvious setup/teardown or test isolation mechanism. Here is my code.
 Clojure is probably one of the few really interesting languages that I really like, but will most likely never
 use. The built-in clojure.test framework was super easy. Here is a great introduction and here is my code.
 
-CoffeeScript
+## CoffeeScript
 I really like CoffeeScript. I used Jasmine (again) for the tests. After already running into the path and
 exports issues for the Node tests I had pretty much already figured out all of the strange gotchas. Using
 "console.log module.paths" really helps to figure out why things don't seem to be working. Here is my code.
