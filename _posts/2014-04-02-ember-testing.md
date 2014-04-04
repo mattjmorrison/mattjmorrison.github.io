@@ -26,11 +26,11 @@ Not much different really. The `moduleFor` has been replaced by a vanilla qunit 
 
 ### Only Unit Test When You Need To
 
-Finally, I have one more point to make. This may be a bit controversial so buckle up. Over the past few years my team and I have evolved the way that we test applications. We have found that maintaining unit tests over time tends to be tedious and requires more upkeep than is desirable. Let's dissect or previous examples and see why that style of testing may prove to be brittle.
+Finally, I have one more point to make. This may be a bit controversial so buckle up. Over the past few years my team and I have evolved the way that we test applications. We have found that maintaining unit tests over time tends to be tedious and requires more upkeep than is desirable. Let's dissect our previous examples and see why that style of testing may prove to be brittle.
 
 ### Stubbing The Object You Are Testing
 
-The first brittle piece of our test is where we are stubbing out our store. Since you're replacing a piece of production code with a different piece of code you are not really testing your production code as it will exist in production. Your are testing a piece of your production code, which is the point, right? However, what happens when the piece of stubbed out production code changes and your stubbed out test version does not? Then you will have a passing test and failing production code, which is a worst case scenario. This type of test is a short term win and a long term burden. While stubbing is not completely avoidable, a good rule to follow is not to stub (or mock) the object that you are testing.
+The first brittle piece of our test is where we are stubbing out our store. Since you're replacing a piece of production code with a different piece of code you are not really testing your production code as it will exist in production. You are testing a piece of your production code, which is the point, right? However, what happens when the piece of stubbed out production code changes and your stubbed out test version does not? Then you will have a passing test and failing production code, which is a worst case scenario. This type of test is a short term win and a long term burden. While stubbing is not completely avoidable, a good rule to follow is not to stub (or mock) the object that you are testing.
 
 ### Calling Methods That You Never Call
 
@@ -42,7 +42,7 @@ The next brittle piece of our test is we are tying down the fact that our store'
 
 ### Do Not Unit Test
 
-For this specific scenario I would recommend not writing a unit test at all, but instead writing an integration test. What my team and I have discovered is that over time the tests that really matter are the high level tests that exercise the functionality of the system without knowing about many of the internals. This provides an excellent [regression][regression] suite and allows you to mercilessly make changes to the structure of your code, the names of your methods, the method signatures and what things happen where without having to worry about going to fix every broken unit test along the way.
+For this specific scenario I would recommend not writing a unit test at all, but instead writing an integration test. What my team and I have discovered is that over time the tests that really matter are the high level tests that exercise the functionality of the system without knowing about many of the internals. This provides an excellent [regression][regression] suite and allows you to mercilessly make changes to the structure of your code, the names of your methods, the method signatures and where things happen without having to worry about going to fix every broken unit test along the way.
 
 
 ### Integration Test All The Things
