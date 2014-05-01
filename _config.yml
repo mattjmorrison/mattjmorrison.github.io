@@ -1,2 +1,3 @@
 name: mattjmorrison.com
 pygments: true
+markdown: rdiscount
