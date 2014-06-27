@@ -342,7 +342,7 @@ person =
   firstName: "Matt"
   lastName: "Morrison"
   doSomething: ->
-    return "I'm working on it"
+    "I'm working on it"
   otherThings:
     five: 5
     one: 1
