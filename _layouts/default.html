@@ -15,11 +15,6 @@ bio:
 - text: I'm Matthew J. Morrison.
 - text: A Passionate, professional software developer & hobbyist; Language nerd & regular user of Unix, Python, Ruby & JavaScript.
 
-social:
-- text: twitter.com/mattjmorrison
-  url: http://twitter.com/mattjmorrison
-- text: github.com/mattjmorrison
-  url: http://github.com/mattjmorrison
 ---
 
 <!DOCTYPE html>
@@ -68,9 +63,6 @@ social:
                         <img class="photo" src="https://secure.gravatar.com/avatar/fef0c23e28423a81e227ac336953e2d7?s=200" />
                         {% for part in page.bio %}
                         <p>{{ part.text }}</p>
-                        {% endfor %}
-                        {% for link in page.social %}
-                            <p><a href="{{ link.url }}">{{ link.text }}</a></p>
                         {% endfor %}
                     </div>
                 </div>

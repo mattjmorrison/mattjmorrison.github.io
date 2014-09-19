@@ -4,21 +4,22 @@ title: mattjmorrison.com
 nocomments: true
 ---
 
-Hi, I'm Matthew J Morrison. I write software. I also write about writing software.
+<div class="well">
+  Hi, I'm Matthew J Morrison. I write software. I also write and speak about writing software.
+</div>
 
-<h2>Latest Blog</h2>
-{% assign post = site.posts.first %}
-<a href="{{ post.url }}"><h4>{{ post.date | date: "%B %d, %Y" }}: {{ post.title }}</h4></a>
+<div class="well">
+  <h2>Latest Blog</h2>
+  {% assign post = site.posts.first %}
+  <a href="{{ post.url }}"><h4>{{ post.date | date: "%B %d, %Y" }}: {{ post.title }}</h4></a>
+</div>
 
-<a class="twitter-timeline" href="https://twitter.com/mattjmorrison" data-widget-id="512812513532993537">Tweets by @mattjmorrison</a>
-<script>
-!function(d,s,id){
-  var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-  if(!d.getElementById(id)){
-    js = d.createElement(s);
-    js.id = id;
-    js.src = p + "://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }
-}(document,"script","twitter-wjs");
-</script>
+<div>
+  <a href="http://twitter.com/mattjmorrison" alt="@mattjmorrison" title="@mattjmorrison">
+    <img src="https://g.twimg.com/Twitter_logo_blue.png" width="150px" />
+  </a>
+  <a href="http://github.com/mattjmorrison" alt="mattjmorrison" title="mattjmorrison">
+    <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="150px" />
+  </a>
+</div>
+
