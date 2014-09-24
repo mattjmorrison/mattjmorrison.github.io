@@ -47,9 +47,32 @@ bio:
                         <div class="nav-collapse collapse">
                             <ul class="nav">
                             {% for link in page.navigation %}
-                            <li {% if page.category and page.category == link.category %}class="active"{% endif %}>
-                              <a href="{{ link.url }}">{{ link.text }}</a>
-                            </li>
+                              {% if page.category and page.category == link.category %}
+                                {% assign classes = 'active' %}
+                              {% else %}
+                                {% assign classes = '' %}
+                              {% endif %}
+                              {% if link.category %}
+                                <li class="dropdown {{ classes }}">
+                                  <a href="{{ link.url }}" data-toggle="dropdown">
+                                    {{ link.text }}
+                                    <b class="caret"></b>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+                                    <li class="divider"></li>
+                                    {% for post in site.posts reversed %}
+                                      {% if post.category == link.category %}
+                                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                      {% endif %}
+                                    {% endfor %}
+                                  </ul>
+                                </li>
+                              {% else %}
+                                <li class="{{ classes }}">
+                                  <a href="{{ link.url }}">{{ link.text }}</a>
+                                </li>
+                              {% endif %}
                             {% endfor %}
                             </ul>
                         </div>

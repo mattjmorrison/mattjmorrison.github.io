@@ -7,16 +7,5 @@ nocomments: true
 <p class="meta">{{ page.date | date: "%B %d, %Y" }}</p>
 
 <div id="post">
-    <div class="tabbable tabs-right">
-        <ul class="nav nav-tabs">
-            {% for post in site.posts reversed %}
-                {% if post.category == 'agile-crusade' %}
-                    <li {% if post.part == page.part %}class="active"{% endif %}><a href="{{ post.url }}">Part {{ post.part }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-        <div class="tab-content">
-            {{ content }}
-        </div>
-    </div>
+  {{ content }}
 </div>
