@@ -1,5 +1,5 @@
 ---
-layout: agile-crusade
+layout: series
 title:  "My Crusade for Agility: Part 1"
 date:   2010-09-05
 category: agile-crusade
