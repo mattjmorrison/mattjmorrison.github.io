@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Python Mixins Continued
+tags: ['python', 'code']
 date:   2012-12-27
 ---
 

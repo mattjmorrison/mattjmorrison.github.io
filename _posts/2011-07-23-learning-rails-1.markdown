@@ -2,6 +2,7 @@
 layout: post
 title:  "Learning Rails: Part 1"
 date:   2011-07-23
+tags: ['ruby', 'rails', 'code']
 ---
 
 I was recently approached at my place of employment by a co-worker with an idea

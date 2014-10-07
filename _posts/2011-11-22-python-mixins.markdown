@@ -2,6 +2,7 @@
 layout: post
 title:  "Python Mixins"
 date:   2011-11-22
+tags: ['python', 'code']
 ---
 
 I am very fond of the concept of mixins as well as the Python language. The

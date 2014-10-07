@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Python Dependency Management: Part 2"
+tags: ['python', 'code']
 date:   2012-04-07
 ---
 

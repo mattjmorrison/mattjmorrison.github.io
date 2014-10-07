@@ -3,6 +3,7 @@ layout: post
 title:  Mocking Django
 date:   2011-02-20
 permalink: /2011/09/mocking-django.html
+tags: ['python', 'django', 'mock', 'testing', 'code']
 ---
 
 This is going to be a fairly long article, so I'll try not to ramble. I've

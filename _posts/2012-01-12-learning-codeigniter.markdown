@@ -2,6 +2,7 @@
 layout: post
 title:  "Learning CodeIgniter: Part 1"
 date:   2012-01-12
+tags: ['php', 'codeigniter', 'code']
 ---
 
 I've been working on a project using PHP and Code Igniter recently. While I have

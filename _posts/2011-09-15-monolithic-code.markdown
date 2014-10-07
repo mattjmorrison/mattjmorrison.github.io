@@ -2,6 +2,7 @@
 layout: post
 title:  "Avoiding Monolithic Code"
 date:   2011-09-15
+tags: ['agile', 'code']
 ---
 
 Monolithic code is one of the many enemies of clean code. When I say,

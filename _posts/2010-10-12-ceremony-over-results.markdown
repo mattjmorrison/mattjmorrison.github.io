@@ -2,6 +2,7 @@
 layout: post
 title:  "Process & Ceremony Over Results"
 date:   2010-10-12
+tags: ['agile']
 ---
 
 Agile development is something that I've never really done professionally, but

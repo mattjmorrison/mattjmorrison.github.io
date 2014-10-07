@@ -2,6 +2,7 @@
 layout: series
 title:  "My Crusade for Agility: Part 11"
 date:   2011-10-25
+tags: ['agile']
 category: agile-crusade
 part: 11
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  'Getting started with Chef'
+tags: ['chef', 'ruby', 'code']
 date:   2013-10-13
 ---
 

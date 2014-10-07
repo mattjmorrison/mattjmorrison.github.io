@@ -2,6 +2,7 @@
 layout: post
 title:  "Language Exploration: Part 2"
 date:   2012-07-07
+tags: ['code']
 ---
 
 The tl;dr version - The fibonacci sequence written in a bunch of languages, each language unit tested in a

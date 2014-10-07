@@ -2,6 +2,7 @@
 layout: post
 title:  "Python Dependency Management"
 date:   2010-10-21
+tags: ['python', 'code']
 ---
 
 I decided to take a bit of a detour from My Crusade for Agility and write about

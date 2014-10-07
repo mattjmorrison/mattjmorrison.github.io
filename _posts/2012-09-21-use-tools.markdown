@@ -2,6 +2,7 @@
 layout: post
 title:  Use Tools
 date:   2012-09-21
+tags: ['agile']
 ---
 
 I'd like to retell an old story that has been around for a very long time. I honestly do not remember where I

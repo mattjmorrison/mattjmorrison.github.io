@@ -2,6 +2,7 @@
 layout: post
 title:  Code for your Audience
 date:   2010-04-22
+tags: ['agile']
 ---
 
 Audience is the most important aspect of and driver behind software. In software,

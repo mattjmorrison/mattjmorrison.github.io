@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  'Testing Ember.js Applications'
+tags: ['ember', 'testing']
 date:   2014-04-2
 ---
 

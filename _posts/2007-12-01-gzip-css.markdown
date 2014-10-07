@@ -2,6 +2,7 @@
 layout: post
 title:  "Gzip CSS" 
 date:   2007-12-01
+tags: ['php', 'css', 'code']
 ---
 
 I've recently read High Performing Websites by Steve Souders and since I finished

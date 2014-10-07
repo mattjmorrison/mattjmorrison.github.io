@@ -2,6 +2,7 @@
 layout: post
 title:  "Testing Inheritance with Inheritance"
 date:   2012-04-14
+tags: ['code', 'testing', 'python']
 ---
 
 Unit testing and test driven development are things that I am very passionate

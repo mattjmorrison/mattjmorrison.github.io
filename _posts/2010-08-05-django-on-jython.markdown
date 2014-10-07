@@ -2,6 +2,7 @@
 layout: post
 title:  Django on Jython
 date:   2010-08-05
+tags: ['python', 'java', 'django', 'jython']
 ---
 
 Last night I presented a high level look at running the Django web

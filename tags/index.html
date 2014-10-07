@@ -1,0 +1,14 @@
+---
+layout: default
+title: mattjmorrison.com tags
+nocomments: true
+---
+
+<h1>Tags</h1>
+<ul class="nav nav-pills">
+{% for tag in site.tags %}
+  <li>
+    <a href="/tags/{{ tag | first | slugize }}/">{{ tag | first}}</a>
+  </li>
+{% endfor %}
+</ul>

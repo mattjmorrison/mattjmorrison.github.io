@@ -2,6 +2,7 @@
 layout: post
 title:  'JavaScript Syntax "Bugs" Me'
 date:   2013-01-02
+tags: ['javascript', 'code', 'coffeescript']
 ---
 
 JavaScript happens to be one of the most popular and widely used programming languages in existence. It also

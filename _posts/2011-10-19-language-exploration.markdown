@@ -2,6 +2,7 @@
 layout: post
 title:  "Language Exploration: Part 1"
 date:   2011-10-19
+tags: ['code']
 ---
 
 I went to college at Indian Hills Community College in Ottumwa Iowa, which I do

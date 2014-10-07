@@ -2,6 +2,7 @@
 layout: post
 title:  "Object Oriented Perl: Protected Methods"
 date:   2008-02-26
+tags: ['perl', 'code']
 ---
 
 I've been using Java and Perl both for the past few years and I've noticed things

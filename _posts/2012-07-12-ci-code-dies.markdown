@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Continuous Integration: Where working code goes to die"
+tags: ['agile']
 date:   2012-07-12
 ---
 
