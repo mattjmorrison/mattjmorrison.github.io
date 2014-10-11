@@ -4,11 +4,12 @@ title: mattjmorrison.com
 nocomments: true
 ---
 
+<ul class="nav nav-tabs nav-stacked">
 {% for post in site.posts %}
-  <div id="row">
-    <div class="span4"><i class="icon-calendar"></i>{{ post.date | date: "%B %d, %Y" }}</div>
-    <div class="span8">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </div>
-  </div>
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.date | date: "%Y-%m-%d" }} <i class="icon-chevron-right"></i> <strong>{{ post.title }}</strong>
+    </a>
+  </li>
 {% endfor %}
+</ul>
