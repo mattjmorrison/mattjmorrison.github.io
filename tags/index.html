@@ -25,13 +25,14 @@ tag_app: true
 </script>
 
 <script type="text/x-handlebars" data-template-name="tag">
-<ul>
 {{#each article in articles}}
-  <li>
-    <span>{{article.date}}</span> &raquo; <a {{bind-attr href=article.url}}>{{article.title}}</a>
-  </li>
+  <div id="row">
+    <div class="span4"><i class="icon-calendar"></i>{{article.date}}</div>
+    <div class="span8">
+      <a {{bind-attr href=article.url}}>{{article.title}}</a>
+    </div>
+  </div>
 {{/each}}
-</ul>
 </script>
 
 {% endraw %}
