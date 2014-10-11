@@ -4,6 +4,8 @@ navigation:
   url: /
 - text: Archive
   url: /archive
+- text: Tags
+  url: /tags
 - text: Agile Crusade
   url: /agile-crusade
   category: agile-crusade
@@ -97,8 +99,13 @@ bio:
                 </div>
             </div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/lib/jquery/jquery.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        {% if page.tag_app %}
+        <script src="/assets/js/lib/handlebars/handlebars.js"></script>
+        <script src="/assets/js/lib/ember/ember.js"></script>
+        <script src="/assets/js/example.js"></script>
+        {% endif %}
         {% unless page.nocomments %}
         <script type="text/javascript">
           setTimeout(function() {

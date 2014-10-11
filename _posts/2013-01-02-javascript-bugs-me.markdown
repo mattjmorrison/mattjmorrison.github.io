@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'JavaScript Syntax "Bugs" Me'
+title:  "JavaScript Syntax `Bugs` Me"
 date:   2013-01-02
 tags: ['javascript', 'code', 'coffeescript']
 ---

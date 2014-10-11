@@ -2,13 +2,36 @@
 layout: default
 title: mattjmorrison.com tags
 nocomments: true
+tag_app: true
 ---
 
-<h1>Tags</h1>
-<ul class="nav nav-pills">
-{% for tag in site.tags %}
+{% raw %}
+
+<div id="tags-application"></div>
+
+<script type="text/x-handlebars">
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+  <ul class="nav nav-pills">
+  {{#each item in content}}
+    <li {{bind-attr class="item.selected:active"}}>
+      {{#link-to 'tag' item.tag}}{{item.tag}} ({{item.articles.length}}){{/link-to}}
+    </li>
+  {{/each}}
+  </ul>
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="tag">
+<ul>
+{{#each article in articles}}
   <li>
-    <a href="/tags/{{ tag | first | slugize }}/">{{ tag | first}}</a>
+    <span>{{article.date}}</span> &raquo; <a {{bind-attr href=article.url}}>{{article.title}}</a>
   </li>
-{% endfor %}
+{{/each}}
 </ul>
+</script>
+
+{% endraw %}

@@ -1,0 +1,9 @@
+{
+    "name": "mattjmorrison.com",
+    "dependencies": {
+        "bower-installer": "*"
+    },
+    "scripts": {
+        "postinstall": "bower-installer"
+    }
+}

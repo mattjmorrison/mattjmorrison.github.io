@@ -1,0 +1,12 @@
+{
+    "name": "mattjmorrison.com",
+    "dependencies": {
+        "ember": "1.7.0"
+    },
+    "install": {
+        "path": {
+            "js": "assets/js/lib/",
+            "css": "assets/css/lib/"
+        }
+    }
+}
