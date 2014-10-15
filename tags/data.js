@@ -1,7 +1,8 @@
 ---
 ---
 [
-{% for tag in site.tags %}{% assign posts = 0 %}
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}{% assign posts = 0 %}
     {
         "tag": "{{ tag | first}}",
         "articles": [
