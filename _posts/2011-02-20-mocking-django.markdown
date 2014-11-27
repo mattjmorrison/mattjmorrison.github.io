@@ -28,6 +28,7 @@ or with `python -m unittest discover -s django_testing` (using Python2.7). Let's
 right into some code examples.
 
 {% highlight python %}
+
 from django.db import models
  
 class SampleManager(models.Manager):
@@ -40,6 +41,7 @@ class Sample(models.Model):
 <br />
 
 {% highlight python %}
+
 import unittest
 import mock
 from django_testing import models
@@ -70,6 +72,7 @@ argument with the value of our user mock.
 
 Let's take a look at a different way to write that same test.
 {% highlight python %}
+
     @mock.patch('django_testing.models.SampleManager.filter', mock.Mock())
     def test_filters_by_user_with_patch(self):
         user = mock.Mock()
@@ -82,6 +85,7 @@ the `SampleManager` class instead of using the 'mock as self' trickery. Let's
 look at one more way to write this test.
 
 {% highlight python %}
+
     @mock.patch('django_testing.models.SampleManager.filter')
     def test_filters_by_user_with_patch_and_filter_passed_in(self, filter_method):
         user = mock.Mock()
@@ -95,6 +99,7 @@ which will then allow you to do assertions directly against it. Now, say we want
 check for specific return values, consider this test.
 
 {% highlight python %}
+
     @mock.patch('django_testing.models.SampleManager.get_last')
     @mock.patch('django_testing.models.SampleManager.get_first')
     def test_result_of_one_query_in_args_of_another(self, get_first, get_last):
@@ -106,6 +111,7 @@ We want to make sure that the result of `get_first_and_last` returns a tuple of 
 of `get_first` and `get_last`. Our implementation code would look like this.
 
 {% highlight python %}
+
 from django.db import models
  
 class SampleManager(models.Manager):
