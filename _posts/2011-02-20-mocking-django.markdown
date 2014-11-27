@@ -73,6 +73,7 @@ argument with the value of our user mock.
 Let's take a look at a different way to write that same test.
 {% highlight python %}
 
+
     @mock.patch('django_testing.models.SampleManager.filter', mock.Mock())
     def test_filters_by_user_with_patch(self):
         user = mock.Mock()
