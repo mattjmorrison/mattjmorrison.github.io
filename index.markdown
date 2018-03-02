@@ -1,7 +1,6 @@
 ---
 layout: default
 title: mattjmorrison.com
-nocomments: true
 ---
 
 <div class="well">

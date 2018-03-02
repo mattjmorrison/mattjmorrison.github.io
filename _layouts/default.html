@@ -108,12 +108,9 @@ bio:
         </div>
         <script src="/assets/js/lib/jquery/jquery.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
-        {% if layout.tag_app %}
         <script src="/assets/js/lib/handlebars/handlebars.js"></script>
         <script src="/assets/js/lib/ember/ember.js"></script>
         <script src="/assets/js/tags.js"></script>
-        {% endif %}
-        {% unless layout.nocomments %}
         <script type="text/javascript">
           setTimeout(function() {
               var disqus_shortname = 'mattjmorrison';
@@ -122,7 +119,6 @@ bio:
               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
           }, 1000);
         </script>
-        {% endunless %}
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
