@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date: "%B %d, %Y" }}</p>
+<h1>{{ layout.title }}</h1>
+<p class="meta">{{ layout.date | date: "%B %d, %Y" }}</p>
 
 <div id="post">
   {{ content }}
@@ -12,7 +12,7 @@ layout: default
 <ul class="nav nav-pills">
   <li>
     {% for post in site.posts %}
-      {% if post.category == page.category and post.date < page.date %}
+      {% if post.category == layout.category and post.date < layout.date %}
         <a href="{{ post.url }}">
           <i class="icon-chevron-left"></i>
           {{ post.title }}
@@ -23,7 +23,7 @@ layout: default
   </li>
   <li>
     {% for post in site.posts reversed %}
-      {% if post.category == page.category and post.date > page.date %}
+      {% if post.category == layout.category and post.date > layout.date %}
         <a href="{{ post.url }}">
           {{ post.title }}
           <i class="icon-chevron-right"></i>

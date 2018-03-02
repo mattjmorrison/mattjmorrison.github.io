@@ -1,4 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 2.4.0'
-gem 'rdiscount'
+gem 'github-pages', group: :jekyll_plugins

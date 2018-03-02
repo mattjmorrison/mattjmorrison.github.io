@@ -22,4 +22,3 @@ nocomments: true
     <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="150px" />
   </a>
 </div>
-

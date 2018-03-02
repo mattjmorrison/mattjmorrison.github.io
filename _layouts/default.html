@@ -1,4 +1,7 @@
 ---
+layout: default
+title: mattjmorrison.com
+mythingy: fars
 navigation:
 - text: Home
   url: /
@@ -12,18 +15,16 @@ navigation:
 - text: Today I Learned...
   url: /today-i-learned
   category: today-i-learned
-
 bio:
-- text: I'm Matthew J. Morrison.
-- text: A Passionate, professional software developer & hobbyist; Language nerd & regular user of Unix, Python, Ruby & JavaScript.
-
+ - text: I'm Matthew J. Morrison.
+ - text: A Passionate, professional software developer & hobbyist; Language nerd & regular user of Unix, Python, Ruby & JavaScript.
 ---
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{{ page.title }}</title>
+        <title>{{ layout.title }}</title>
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="/assets/css/syntax.css" />
@@ -50,8 +51,8 @@ bio:
 
                         <div class="nav-collapse collapse">
                             <ul class="nav">
-                            {% for link in page.navigation %}
-                              {% if page.category and page.category == link.category %}
+                            {% for link in layout.navigation %}
+                              {% if layout.category and layout.category == link.category %}
                                 {% assign classes = 'active' %}
                               {% else %}
                                 {% assign classes = '' %}
@@ -79,7 +80,7 @@ bio:
                               {% endif %}
                             {% endfor %}
                             <li>
-                              <a target="_blank" href="https://github.com/mattjmorrison/mattjmorrison.github.io/edit/master/{{page.path}}">Submit A Correction</a>
+                              <a target="_blank" href="https://github.com/mattjmorrison/mattjmorrison.github.io/edit/master/{{layout.path}}">Submit A Correction</a>
                             </li>
                             </ul>
                         </div>
@@ -91,7 +92,7 @@ bio:
                 <div class="span2 hidden-phone">
                     <div id="info" class="affix span2">
                         <img class="photo" src="https://secure.gravatar.com/avatar/fef0c23e28423a81e227ac336953e2d7?s=200" />
-                        {% for part in page.bio %}
+                        {% for part in layout.bio %}
                         <p>{{ part.text }}</p>
                         {% endfor %}
                         <a href="https://github.com/mattjmorrison/mattjmorrison.github.io">
@@ -107,12 +108,12 @@ bio:
         </div>
         <script src="/assets/js/lib/jquery/jquery.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
-        {% if page.tag_app %}
+        {% if layout.tag_app %}
         <script src="/assets/js/lib/handlebars/handlebars.js"></script>
         <script src="/assets/js/lib/ember/ember.js"></script>
         <script src="/assets/js/tags.js"></script>
         {% endif %}
-        {% unless page.nocomments %}
+        {% unless layout.nocomments %}
         <script type="text/javascript">
           setTimeout(function() {
               var disqus_shortname = 'mattjmorrison';
