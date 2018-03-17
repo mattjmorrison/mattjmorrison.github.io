@@ -93,8 +93,9 @@ bio:
                     <div id="info" class="affix span2">
                         <img class="photo" src="https://secure.gravatar.com/avatar/fef0c23e28423a81e227ac336953e2d7?s=200" />
                         {% for part in layout.bio %}
-                        <p>{{ part.text }}</p>
+                          <p>{{ part.text }}</p>
                         {% endfor %}
+                        <div data-component='mjm-quotes'></div>
                         <a href="https://github.com/mattjmorrison/mattjmorrison.github.io">
                             <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png">
                         </a>
@@ -108,9 +109,6 @@ bio:
         </div>
         <script src="/assets/js/lib/jquery/jquery.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
-        <script src="/assets/js/lib/handlebars/handlebars.js"></script>
-        <script src="/assets/js/lib/ember/ember.js"></script>
-        <script src="/assets/js/tags.js"></script>
         <script type="text/javascript">
           setTimeout(function() {
               var disqus_shortname = 'mattjmorrison';
@@ -126,5 +124,9 @@ bio:
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
           ga('create', 'UA-17357384-1', 'auto');ga('send', 'pageview');
         </script>
+        <script src="//www.mattjmorrison.com/mattjmorrison-ember/assets/vendor.js"></script>
+        <script src="//www.mattjmorrison.com/mattjmorrison-ember/assets/mattjmorrison-ember.js"></script>
+        <!-- <script src="//localhost:4200/mattjmorrison-ember/assets/vendor.js"></script> -->
+        <!-- <script src="//localhost:4200/mattjmorrison-ember/assets/mattjmorrison-ember.js"></script> -->
     </body>
 </html>

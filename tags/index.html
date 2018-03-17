@@ -4,34 +4,5 @@ title: mattjmorrison.com tags
 ---
 
 {% raw %}
-
-<div id="tags-application"></div>
-
-<script type="text/x-handlebars">
-  {{outlet}}
-</script>
-
-<script type="text/x-handlebars" data-template-name="index">
-  <ul class="nav nav-pills">
-  {{#each item in content}}
-    <li {{bind-attr class="item.selected:active"}}>
-      {{#link-to 'tag' item.tag}}{{item.tag}} ({{item.articles.length}}){{/link-to}}
-    </li>
-  {{/each}}
-  </ul>
-  {{outlet}}
-</script>
-
-<script type="text/x-handlebars" data-template-name="tag">
-<ul class="nav nav-tabs nav-stacked">
-{{#each article in articles}}
-  <li>
-    <a {{bind-attr href=article.url}}>
-      {{article.date}} <i class="icon-chevron-right"></i> <strong>{{article.title}}</strong>
-    </a>
-  </li>
-{{/each}}
-</ul>
-</script>
-
+  <div data-component='mjm-tags'></div>
 {% endraw %}

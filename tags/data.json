@@ -1,0 +1,57 @@
+---
+---
+{
+  "data": [
+    {% for tag in site.tags %}
+      {
+        "type": "tags",
+        "id": "{{ tag | first }}",
+        "attributes": {
+          "name": "{{ tag | first }}"
+        },
+        "relationships": {
+          "articles": {
+            "data": [
+              {% assign tag_name = tag | first %}
+              {% for post in site.tags[tag_name] %}
+                {
+                  "type": "article",
+                  "id": "{{ post.id}}"
+                }
+                {% if forloop.last == false %},{% endif %}
+              {% endfor %}
+            ]
+          }
+        }
+      }
+      {% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ],
+  "included": [
+    {% for post in site.posts %}
+      {
+        "type": "article",
+        "id": "{{ post.id }}",
+        "attributes": {
+          "date": "{{ post.date | date: "%Y-%m-%d" }}",
+          "title": "{{ post.title }}",
+          "url": "{{ post.url }}"
+        },
+        "relationships": {
+          "tags": {
+            "data": [
+              {% for tag in post.tags %}
+                {
+                  "type": "tags",
+                  "id": "{{ tag }}"
+                }
+                {% if forloop.last == false %},{% endif %}
+              {% endfor %}
+            ]
+          }
+        }
+      }
+      {% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ]
+}
