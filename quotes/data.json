@@ -88,6 +88,8 @@ quotes:
   attribution: "John Lennon"
 - text: "Among a great many other things that chess teaches you is to control the initial excitement you feel when you see something that looks good. It trains you to think before grabbing and to think just as objectively when you're in trouble."
   attribution: "Stanley Kubrick"
+- text: "Education consists mainly of what we have unlearned."
+  attribution: "Mark Twain"
 ---
 {
   "data": [
