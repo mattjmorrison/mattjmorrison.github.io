@@ -14,10 +14,5 @@ title: mattjmorrison.com
 </div>
 
 <div>
-  <a href="http://twitter.com/mattjmorrison" alt="@mattjmorrison" title="@mattjmorrison">
-    <img src="https://g.twimg.com/Twitter_logo_blue.png" width="150px" />
-  </a>
-  <a href="http://github.com/mattjmorrison" alt="mattjmorrison" title="mattjmorrison">
-    <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="150px" />
-  </a>
+  <a href="https://linktr.ee/mattjmorrison" alt="Socials" title="@mattjmorrison">Social Links</a>
 </div>
