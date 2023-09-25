@@ -7,6 +7,24 @@ app_version: 1.17.4
 
 ## Status
 
+<br/>
+
+
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBdG9kb212YyUzQSUzQW1hdHRqbW9ycmlzb24=:: -->
+### 📄 tasks/Gruntfile.js
+```javascript
+22     
+23     		var directories = grunt.file.expand({
+24     			filter: function (src) {
+25     				return grunt.file.isDir(src) && src.substr(-14) === 'todomvc-common' && !src.match(sourceIdentifierRegex);
+26     			}
+27     		}, ['*/**']);
+28     
+```
+
+<br/>
+
 Accepted
 
 ## Context
@@ -18,8 +36,6 @@ I need a website.
 I will use github pages & jekyll
 
 ## Consequences
-
-<br/>
 
 <br/>
 
